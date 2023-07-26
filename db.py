@@ -11,7 +11,7 @@ def db_connect():
         print("Azure Blob Storage Python quickstart sample")
         account_url = "https://rssscrapdata.table.core.windows.net/" #"https://seleniumnews9706b8.table.core.windows.net/"
 
-        credential = AzureNamedKeyCredential("rssscrapdata", "9yAeskaxbOCC306PS2ataipsKx0gZRBwcWwqUigPCgYjBF4WPt8VHP6m6mVI7j+uKL3Nxkz5Nfsv+AStk6xOqg==")
+        credential = AzureNamedKeyCredential("rssscrapdata", "--add your credential--")
 
         service = TableServiceClient(endpoint=account_url, credential=credential)
         return {"service":service,
